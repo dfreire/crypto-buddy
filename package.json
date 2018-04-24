@@ -1,8 +1,9 @@
 {
   "name": "crypto-buddy",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
-  "main": "lib/index.js",
+  "main": "lib/index",
+  "typings": "lib/index",
   "dependencies": {
     "bcrypt": "^2.0.1",
     "bcryptjs": "^2.4.3"
