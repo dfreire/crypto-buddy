@@ -33,8 +33,6 @@ Credit: http://vancelucas.com/blog/stronger-encryption-and-decryption-in-node-js
 ## hashPass(password)
 
 ```javascript
-const cryptoBuddy = require('./lib/index');
-
 let hashed = cryptoBuddy.hashPass('my-1st_password');
 console.log(hashed);
 // => "$2b$10$0g7FZJVtyQkRhyYPNlflHOlZWTPAwIJAplinRSElpKdJCyE9Pk70K"
@@ -43,4 +41,12 @@ console.log(hashed);
 hashed = cryptoBuddy.hashPass('my-1st_password');
 console.log(hashed);
 // => "$2b$10$EihNlhS4ScS0rJ/rf5CrKuuEEMBfii09nBY6p9SQ.i7KeaCxgug/i"
+```
+
+## sha1(text)
+
+```javascript
+const sha1 = cryptoBuddy.sha1('Hello, World!');
+console.log(sha1);
+// => "0a0a9f2a6772942557ab5355d76af442f8f65e01"
 ```

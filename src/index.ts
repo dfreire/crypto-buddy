@@ -24,3 +24,7 @@ export function decrypt(key, text) {
 export function hashPass(password) {
     return bcrypt.hashSync(password, bcrypt.genSaltSync(10));
 }
+
+export function sha1(text) {
+    return crypto.createHash('sha1').update(text).digest('hex');
+}
