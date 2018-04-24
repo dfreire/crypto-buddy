@@ -1,4 +1,5 @@
 import * as crypto from 'crypto';
+import * as bcrypt from 'bcrypt';
 
 // credit: http://vancelucas.com/blog/stronger-encryption-and-decryption-in-node-js/
 export function encrypt(key, text) {
@@ -18,4 +19,8 @@ export function decrypt(key, text) {
     let decrypted = decipher.update(encryptedText);
     decrypted = Buffer.concat([decrypted, decipher.final()]);
     return decrypted.toString();
+}
+
+export function hashPass(password) {
+    return bcrypt.hashSync(password, bcrypt.genSaltSync(10));
 }
