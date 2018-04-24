@@ -1,0 +1,24 @@
+{
+  "name": "crypto-buddy",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3"
+  },
+  "main": "lib/index.js",
+  "devDependencies": {
+    "@types/node": "^9.6.5",
+    "rimraf": "^2.6.2",
+    "tslib": "^1.9.0",
+    "tslint": "^5.9.1",
+    "tslint-microsoft-contrib": "^5.0.2",
+    "tsutils": "^2.19.1",
+    "typescript": "^2.6.2"
+  },
+  "scripts": {
+    "clean": "rimraf out",
+    "compile": "tsc",
+    "compile-watch": "tsc -w",
+    "build": "npm run clean && npm run compile"
+  }
+}
