@@ -3,7 +3,7 @@
 ## encrypt(key, message) and decrypt(key, message)
 
 ```javascript
-var key = "qGMS2a!ORD-oC7yx.kWgyG3vKos0V?xs"; // must have a lenght of 32
+var key = "qGMS2a!ORD-oC7yx.kWgyG3vKos0V?xs"; // must have a length of 32
 
 var enc = cryptoBuddy.encrypt(key, 'hello');
 console.log('enc', enc);
