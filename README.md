@@ -2,10 +2,10 @@
 
 ## Install and use
 
-`npm install --save crypto-buddy``
+`npm install --save crypto-buddy`
 
 ```javascript
-const cryptoBuddy = require('crypto-buddy);
+const cryptoBuddy = require('crypto-buddy');
 ```
 
 ## encrypt(key, message) and decrypt(key, message)
