@@ -65,6 +65,6 @@ const key = 'qGMS2a!ORD-oC7yx.kWgyG3vKos0V?xs';
 cryptoBuddy.jwtSign({ hello: 'world' }, key, '1h');
 // => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoZWxsbyI6IndvcmxkIiwiaWF0IjoxNTI0NzczMDM5LCJleHAiOjE1MjQ3NzY2Mzl9.hqRA1Ws2BJ6c_IiUzeS6t1ECBb6CzngcYefmIcxRSL8'
 
-jwtVerify('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoZWxsbyI6IndvcmxkIiwiaWF0IjoxNTI0NzczMDM5LCJleHAiOjE1MjQ3NzY2Mzl9.hqRA1Ws2BJ6c_IiUzeS6t1ECBb6CzngcYefmIcxRSL8', key)
+cryptoBuddy.jwtVerify('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoZWxsbyI6IndvcmxkIiwiaWF0IjoxNTI0NzczMDM5LCJleHAiOjE1MjQ3NzY2Mzl9.hqRA1Ws2BJ6c_IiUzeS6t1ECBb6CzngcYefmIcxRSL8', key)
 // => { hello: 'world', iat: 1524773039, exp: 1524776639 }
 ```
