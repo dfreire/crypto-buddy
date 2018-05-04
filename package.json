@@ -1,9 +1,10 @@
 {
   "name": "crypto-buddy",
-  "version": "0.3.1",
-  "description": "",
+  "version": "0.4.0",
+  "description": "Wrapper for common cryptographic operations",
   "main": "lib/index",
   "typings": "lib/index",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^2.0.1",
     "bcryptjs": "^2.4.3",

@@ -15,6 +15,13 @@ cryptoBuddy.sha1('Hello, World!');
 // => '0a0a9f2a6772942557ab5355d76af442f8f65e01'
 ```
 
+## md5(text)
+
+```javascript
+cryptoBuddy.md5('Hello, World!');
+// => '65a8e27d8879283831b664bd8b7f0ad4'
+```
+
 ## encrypt(key, message)
 
 ```javascript

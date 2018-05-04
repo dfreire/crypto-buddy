@@ -1,4 +1,5 @@
 export declare function sha1(text: string): string;
+export declare function md5(text: string): string;
 export declare function encrypt(text: string, key: string): string;
 export declare function decrypt(text: string, key: string): string;
 export declare function hashPass(password: string): string;
