@@ -22,7 +22,7 @@ cryptoBuddy.md5('Hello, World!');
 // => '65a8e27d8879283831b664bd8b7f0ad4'
 ```
 
-## encrypt(key, message)
+## encrypt(message, key)
 
 ```javascript
 const key = 'qGMS2a!ORD-oC7yx.kWgyG3vKos0V?xs'; // must have a length of 32
@@ -37,7 +37,7 @@ cryptoBuddy.encrypt('hello', key);
 
 Credit: http://vancelucas.com/blog/stronger-encryption-and-decryption-in-node-js/
 
-## decrypt(key, message)
+## decrypt(message, key)
 
 ```javascript
 const key = 'qGMS2a!ORD-oC7yx.kWgyG3vKos0V?xs'; // must have a length of 32
